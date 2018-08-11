@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\FPGA\project\cpu3\ethernet_test.ncd
+OUTFILE=D:\FPGA\project\cpu3\ethernet_test.bit
+FAMILY=Spartan6
+PART=xc6slx16-2csg324
+WORKINGDIR=D:\FPGA\project\cpu3
+LICENSE=WebPack
+USER_INFO=__0_0_0

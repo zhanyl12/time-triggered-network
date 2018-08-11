@@ -1,0 +1,1319 @@
+xst -intstyle ise -ifn "D:/FPGA/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/ethernet_test/ethernet_test.syr" 
+xst -intstyle ise -ifn "D:/FPGA/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/ethernet_test/ethernet_test.syr" 
+xst -intstyle ise -ifn "D:/FPGA/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/ethernet_test/ethernet_test.syr" 
+xst -intstyle ise -ifn "D:/FPGA/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/ethernet_test/ethernet_test.syr" 
+xst -intstyle ise -ifn "D:/FPGA/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/ethernet_test/ethernet_test.syr" 
+xst -intstyle ise -ifn "D:/FPGA/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/ethernet_test/ethernet_test.syr" 
+xst -intstyle ise -ifn "D:/FPGA/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/ethernet_test/ethernet_test.syr" 
+xst -intstyle ise -ifn "D:/FPGA/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/ethernet_test/ethernet_test.syr" 
+xst -intstyle ise -ifn "D:/FPGA/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/ethernet_test/ethernet_test.syr" 
+xst -intstyle ise -ifn "D:/FPGA/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/ethernet_test/ethernet_test.syr" 
+xst -intstyle ise -ifn "D:/FPGA/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/ethernet_test/ethernet_test.syr" 
+xst -intstyle ise -ifn "D:/FPGA/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim ethernet_test.ngc ethernet_test_synthesis.v 
+xst -intstyle ise -ifn "D:/FPGA/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim ethernet_test.ngc ethernet_test_synthesis.v 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+xst -intstyle ise -ifn "D:/FPGA/project/ethernet_test/ethernet_test.xst" -ofn "D:/FPGA/project/ethernet_test/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/cpu2/ethernet_test.xst" -ofn "D:/FPGA/project/cpu2/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/cpu2/ethernet_test.xst" -ofn "D:/FPGA/project/cpu2/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/cpu2/ethernet_test.xst" -ofn "D:/FPGA/project/cpu2/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 
+xst -intstyle ise -ifn "D:/FPGA/project/cpu2/ethernet_test.xst" -ofn "D:/FPGA/project/cpu2/ethernet_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2 ethernet_test.ngc ethernet_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ethernet_test_map.ncd ethernet_test.ngd ethernet_test.pcf 
+par -w -intstyle ise -ol high -mt off ethernet_test_map.ncd ethernet_test.ncd ethernet_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ethernet_test.twx ethernet_test.ncd -o ethernet_test.twr ethernet_test.pcf -ucf udp.ucf 
+bitgen -intstyle ise -f ethernet_test.ut ethernet_test.ncd 

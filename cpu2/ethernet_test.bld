@@ -1,0 +1,57 @@
+Release 14.7 ngdbuild P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Command Line: E:\ISE\14.7\ISE_DS\ISE\bin\nt64\unwrapped\ngdbuild.exe -intstyle
+ise -dd _ngo -sd ipcore_dir -nt timestamp -uc udp.ucf -p xc6slx16-csg324-2
+ethernet_test.ngc ethernet_test.ngd
+
+Reading NGO file "D:/FPGA/project/cpu2/ethernet_test.ngc" ...
+Loading design module "ipcore_dir/ram.ngc"...
+Gathering constraint information from source properties...
+Done.
+
+Annotating constraints to design from ucf file "udp.ucf" ...
+Resolving constraint associations...
+Checking Constraint Associations...
+WARNING:ConstraintSystem:137 - Constraint <TNM_NET = sys_clk_pin;> [udp.ucf(2)]:
+   No appropriate instances for the TNM constraint are driven by "fpga_gclk".
+
+WARNING:ConstraintSystem:56 - Constraint <TIMESPEC TS_sys_clk_pin = PERIOD
+   sys_clk_pin 50000 kHz;> [udp.ucf(3)]: Unable to find an active 'TNM' or
+   'TimeGrp' constraint named 'sys_clk_pin'.
+
+WARNING:ConstraintSystem:191 - The TNM 'sys_clk_pin', does not directly or
+   indirectly drive any flip-flops, latches and/or RAMS and cannot be actively
+   used by the referencing Period constraint 'TS_sys_clk_pin'. If clock manager
+   blocks are directly or indirectly driven, a new TNM constraint will not be
+   derived even though the referencing constraint is a PERIOD constraint unless
+   an output of the clock manager drives flip-flops, latches or RAMs. This TNM
+   is used in the following user PERIOD specification:
+   <TIMESPEC TS_sys_clk_pin = PERIOD sys_clk_pin 50000 kHz;> [udp.ucf(3)]
+
+WARNING:ConstraintSystem:197 - The following specification is invalid because
+   the referenced TNM constraint was removed:
+   <TIMESPEC TS_sys_clk_pin = PERIOD sys_clk_pin 50000 kHz;> [udp.ucf(3)]
+
+Done...
+
+Checking expanded design ...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   4
+
+Total memory usage is 244760 kilobytes
+
+Writing NGD file "ethernet_test.ngd" ...
+Total REAL time to NGDBUILD completion:  3 sec
+Total CPU time to NGDBUILD completion:   3 sec
+
+Writing NGDBUILD log file "ethernet_test.bld"...

@@ -1,0 +1,17 @@
+PROMGEN: Xilinx Prom Generator P.20131013
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+promgen -w -p mcs -c FF -o D:\FPGA\project\cpu3//cpu3 -s 16384 -u 0000 D:/FPGA/project/cpu3/ethernet_test.bit -spi 
+
+PROM D:\FPGA\project\cpu3\cpu3.prm map: Wed Mar 28 17:13:07 2018
+
+Calculating PROM checksum with fill value ff
+
+Format        Mcs86 (32-bit)
+Size          16384K
+PROM start    0000:0000
+PROM end      00ff:ffff
+PROM checksum f84cbb80
+
+        Addr1        Addr2                     Date File(s)
+    0000:0000    0007:1543     Mar 28 17:12:10 2018 D:/FPGA/project/cpu3/ethernet_test.bit

@@ -1,0 +1,6 @@
+verilog work "ipsend.v"
+verilog work "iprecieve.v"
+verilog work "crc.v"
+verilog work "udp.v"
+verilog work "ipcore_dir/ram.v"
+verilog work "ethernet_test.v"

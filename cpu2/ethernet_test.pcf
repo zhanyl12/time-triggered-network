@@ -1,0 +1,515 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Wed Mar 28 17:05:18 2018
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "e_reset" LOCATE = SITE "J16" LEVEL 1;
+COMP "e_rxc" LOCATE = SITE "L16" LEVEL 1;
+COMP "fpga_gclk" LOCATE = SITE "V10" LEVEL 1;
+COMP "e_txc" LOCATE = SITE "K16" LEVEL 1;
+COMP "reset_n" LOCATE = SITE "N4" LEVEL 1;
+COMP "e_rxd<0>" LOCATE = SITE "G13" LEVEL 1;
+COMP "e_rxd<1>" LOCATE = SITE "E16" LEVEL 1;
+COMP "e_rxd<2>" LOCATE = SITE "E18" LEVEL 1;
+COMP "e_rxd<3>" LOCATE = SITE "K12" LEVEL 1;
+COMP "e_rxd<4>" LOCATE = SITE "K13" LEVEL 1;
+COMP "e_rxd<5>" LOCATE = SITE "F17" LEVEL 1;
+COMP "e_rxd<6>" LOCATE = SITE "F18" LEVEL 1;
+COMP "e_rxd<7>" LOCATE = SITE "H13" LEVEL 1;
+COMP "e_txd<0>" LOCATE = SITE "H16" LEVEL 1;
+COMP "e_txd<1>" LOCATE = SITE "G16" LEVEL 1;
+COMP "e_txd<2>" LOCATE = SITE "G18" LEVEL 1;
+COMP "e_txd<3>" LOCATE = SITE "J13" LEVEL 1;
+COMP "e_txd<4>" LOCATE = SITE "K14" LEVEL 1;
+COMP "e_txd<5>" LOCATE = SITE "L12" LEVEL 1;
+COMP "e_txd<6>" LOCATE = SITE "L13" LEVEL 1;
+COMP "e_txd<7>" LOCATE = SITE "K15" LEVEL 1;
+COMP "led<0>" LOCATE = SITE "V5" LEVEL 1;
+COMP "led<1>" LOCATE = SITE "R3" LEVEL 1;
+COMP "led<2>" LOCATE = SITE "T3" LEVEL 1;
+COMP "led<3>" LOCATE = SITE "T4" LEVEL 1;
+COMP "e_gtxc" LOCATE = SITE "L15" LEVEL 1;
+COMP "e_rxer" LOCATE = SITE "H14" LEVEL 1;
+COMP "e_rxdv" LOCATE = SITE "H15" LEVEL 1;
+COMP "e_txen" LOCATE = SITE "K17" LEVEL 1;
+COMP "e_txer" LOCATE = SITE "J18" LEVEL 1;
+PIN
+        ram_inst_out/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram_pins<28>
+        = BEL
+        "ram_inst_out/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram"
+        PINNAME CLKA;
+PIN
+        ram_inst_out/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram_pins<29>
+        = BEL
+        "ram_inst_out/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram"
+        PINNAME CLKB;
+PIN
+        ram_inst/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram_pins<28>
+        = BEL
+        "ram_inst/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram"
+        PINNAME CLKA;
+PIN
+        ram_inst/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram_pins<29>
+        = BEL
+        "ram_inst/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram"
+        PINNAME CLKB;
+TIMEGRP grxc_clk_pin = BEL "ram_wren_i" BEL "ram_wr_finish" BEL
+        "tx_total_length_0" BEL "tx_total_length_1" BEL "tx_total_length_2"
+        BEL "tx_total_length_3" BEL "tx_total_length_4" BEL
+        "tx_total_length_5" BEL "tx_total_length_6" BEL "tx_total_length_7"
+        BEL "tx_total_length_8" BEL "tx_total_length_9" BEL
+        "tx_total_length_10" BEL "tx_total_length_11" BEL "tx_total_length_12"
+        BEL "tx_total_length_13" BEL "tx_total_length_14" BEL
+        "tx_total_length_15" BEL "tx_data_length_0" BEL "tx_data_length_1" BEL
+        "tx_data_length_2" BEL "tx_data_length_3" BEL "tx_data_length_4" BEL
+        "tx_data_length_5" BEL "tx_data_length_6" BEL "tx_data_length_7" BEL
+        "tx_data_length_8" BEL "tx_data_length_9" BEL "tx_data_length_10" BEL
+        "tx_data_length_11" BEL "tx_data_length_12" BEL "tx_data_length_13"
+        BEL "tx_data_length_14" BEL "tx_data_length_15" BEL "led_0" BEL
+        "led_1" BEL "led_2" BEL "led_3" BEL "time_counter_0" BEL
+        "time_counter_1" BEL "time_counter_2" BEL "time_counter_3" BEL
+        "time_counter_4" BEL "time_counter_5" BEL "time_counter_6" BEL
+        "time_counter_7" BEL "time_counter_8" BEL "time_counter_9" BEL
+        "time_counter_10" BEL "time_counter_11" BEL "time_counter_12" BEL
+        "time_counter_13" BEL "time_counter_14" BEL "time_counter_15" BEL
+        "time_counter_16" BEL "time_counter_17" BEL "time_counter_18" BEL
+        "time_counter_19" BEL "time_counter_20" BEL "time_counter_21" BEL
+        "time_counter_22" BEL "time_counter_23" BEL "time_counter_24" BEL
+        "time_counter_25" BEL "time_counter_26" BEL "time_counter_27" BEL
+        "time_counter_28" BEL "time_counter_29" BEL "time_counter_30" BEL
+        "time_counter_31" BEL "ram_wr_data_i_0" BEL "ram_wr_data_i_1" BEL
+        "ram_wr_data_i_2" BEL "ram_wr_data_i_3" BEL "ram_wr_data_i_4" BEL
+        "ram_wr_data_i_5" BEL "ram_wr_data_i_6" BEL "ram_wr_data_i_7" BEL
+        "ram_wr_data_i_8" BEL "ram_wr_data_i_9" BEL "ram_wr_data_i_10" BEL
+        "ram_wr_data_i_11" BEL "ram_wr_data_i_12" BEL "ram_wr_data_i_13" BEL
+        "ram_wr_data_i_14" BEL "ram_wr_data_i_15" BEL "ram_wr_data_i_16" BEL
+        "ram_wr_data_i_17" BEL "ram_wr_data_i_18" BEL "ram_wr_data_i_19" BEL
+        "ram_wr_data_i_20" BEL "ram_wr_data_i_21" BEL "ram_wr_data_i_22" BEL
+        "ram_wr_data_i_23" BEL "ram_wr_data_i_24" BEL "ram_wr_data_i_25" BEL
+        "ram_wr_data_i_26" BEL "ram_wr_data_i_27" BEL "ram_wr_data_i_28" BEL
+        "ram_wr_data_i_29" BEL "ram_wr_data_i_30" BEL "ram_wr_data_i_31" BEL
+        "i_0" BEL "i_1" BEL "i_2" BEL "i_3" BEL "i_4" BEL
+        "finish_number_1_FSM_FFd2" BEL "finish_number_1_FSM_FFd1" BEL
+        "finish_number_FSM_FFd2" BEL "finish_number_FSM_FFd1" BEL "k_FSM_FFd2"
+        BEL "k_FSM_FFd1" BEL "ram_wr_addr_i_0" BEL "ram_wr_addr_i_1" BEL
+        "ram_wr_addr_i_2" BEL "ram_wr_addr_i_3" BEL "ram_wr_addr_i_4" BEL
+        "ram_wr_addr_i_5" BEL "ram_wr_addr_i_6" BEL "ram_wr_addr_i_7" BEL
+        "ram_wr_addr_i_8" BEL "other_counter_0" BEL "other_counter_1" BEL
+        "other_counter_2" BEL "other_counter_3" BEL "other_counter_4" BEL
+        "other_counter_5" BEL "other_counter_6" BEL "other_counter_7" BEL
+        "other_counter_8" BEL "other_counter_9" BEL "other_counter_10" BEL
+        "other_counter_11" BEL "other_counter_12" BEL "other_counter_13" BEL
+        "other_counter_14" BEL "other_counter_15" BEL "other_counter_16" BEL
+        "other_counter_17" BEL "other_counter_18" BEL "other_counter_19" BEL
+        "other_counter_20" BEL "other_counter_21" BEL "other_counter_22" BEL
+        "other_counter_23" BEL "other_counter_24" BEL "other_counter_25" BEL
+        "other_counter_26" BEL "other_counter_27" BEL "other_counter_28" BEL
+        "other_counter_29" BEL "other_counter_30" BEL "other_counter_31" BEL
+        "my_counter_0" BEL "my_counter_1" BEL "my_counter_2" BEL
+        "my_counter_3" BEL "my_counter_4" BEL "my_counter_5" BEL
+        "my_counter_6" BEL "my_counter_7" BEL "my_counter_8" BEL
+        "my_counter_9" BEL "my_counter_10" BEL "my_counter_11" BEL
+        "my_counter_12" BEL "my_counter_13" BEL "my_counter_14" BEL
+        "my_counter_15" BEL "my_counter_16" BEL "my_counter_17" BEL
+        "my_counter_18" BEL "my_counter_19" BEL "my_counter_20" BEL
+        "my_counter_21" BEL "my_counter_22" BEL "my_counter_23" BEL
+        "my_counter_24" BEL "my_counter_25" BEL "my_counter_26" BEL
+        "my_counter_27" BEL "my_counter_28" BEL "my_counter_29" BEL
+        "my_counter_30" BEL "my_counter_31" BEL
+        "u1/iprecieve_inst/ram_wr_addr_8" BEL
+        "u1/iprecieve_inst/ram_wr_addr_7" BEL
+        "u1/iprecieve_inst/ram_wr_addr_6" BEL
+        "u1/iprecieve_inst/ram_wr_addr_5" BEL
+        "u1/iprecieve_inst/ram_wr_addr_4" BEL
+        "u1/iprecieve_inst/ram_wr_addr_3" BEL
+        "u1/iprecieve_inst/ram_wr_addr_2" BEL
+        "u1/iprecieve_inst/ram_wr_addr_1" BEL
+        "u1/iprecieve_inst/ram_wr_addr_0" BEL
+        "u1/iprecieve_inst/rx_state_FSM_FFd1" BEL
+        "u1/iprecieve_inst/rx_state_FSM_FFd2" BEL
+        "u1/iprecieve_inst/rx_state_FSM_FFd3" BEL
+        "u1/iprecieve_inst/rx_state_FSM_FFd4" BEL
+        "u1/iprecieve_inst/receive_counter_31" BEL
+        "u1/iprecieve_inst/receive_counter_30" BEL
+        "u1/iprecieve_inst/receive_counter_29" BEL
+        "u1/iprecieve_inst/receive_counter_28" BEL
+        "u1/iprecieve_inst/receive_counter_27" BEL
+        "u1/iprecieve_inst/receive_counter_26" BEL
+        "u1/iprecieve_inst/receive_counter_25" BEL
+        "u1/iprecieve_inst/receive_counter_24" BEL
+        "u1/iprecieve_inst/receive_counter_23" BEL
+        "u1/iprecieve_inst/receive_counter_22" BEL
+        "u1/iprecieve_inst/receive_counter_21" BEL
+        "u1/iprecieve_inst/receive_counter_20" BEL
+        "u1/iprecieve_inst/receive_counter_19" BEL
+        "u1/iprecieve_inst/receive_counter_18" BEL
+        "u1/iprecieve_inst/receive_counter_17" BEL
+        "u1/iprecieve_inst/receive_counter_16" BEL
+        "u1/iprecieve_inst/receive_counter_15" BEL
+        "u1/iprecieve_inst/receive_counter_14" BEL
+        "u1/iprecieve_inst/receive_counter_13" BEL
+        "u1/iprecieve_inst/receive_counter_12" BEL
+        "u1/iprecieve_inst/receive_counter_11" BEL
+        "u1/iprecieve_inst/receive_counter_10" BEL
+        "u1/iprecieve_inst/receive_counter_9" BEL
+        "u1/iprecieve_inst/receive_counter_8" BEL
+        "u1/iprecieve_inst/receive_counter_7" BEL
+        "u1/iprecieve_inst/receive_counter_6" BEL
+        "u1/iprecieve_inst/receive_counter_5" BEL
+        "u1/iprecieve_inst/receive_counter_4" BEL
+        "u1/iprecieve_inst/receive_counter_3" BEL
+        "u1/iprecieve_inst/receive_counter_2" BEL
+        "u1/iprecieve_inst/receive_counter_1" BEL
+        "u1/iprecieve_inst/receive_counter_0" BEL
+        "u1/iprecieve_inst/data_o_31" BEL "u1/iprecieve_inst/data_o_30" BEL
+        "u1/iprecieve_inst/data_o_29" BEL "u1/iprecieve_inst/data_o_28" BEL
+        "u1/iprecieve_inst/data_o_27" BEL "u1/iprecieve_inst/data_o_26" BEL
+        "u1/iprecieve_inst/data_o_25" BEL "u1/iprecieve_inst/data_o_24" BEL
+        "u1/iprecieve_inst/data_o_23" BEL "u1/iprecieve_inst/data_o_22" BEL
+        "u1/iprecieve_inst/data_o_21" BEL "u1/iprecieve_inst/data_o_20" BEL
+        "u1/iprecieve_inst/data_o_19" BEL "u1/iprecieve_inst/data_o_18" BEL
+        "u1/iprecieve_inst/data_o_17" BEL "u1/iprecieve_inst/data_o_16" BEL
+        "u1/iprecieve_inst/data_o_15" BEL "u1/iprecieve_inst/data_o_14" BEL
+        "u1/iprecieve_inst/data_o_13" BEL "u1/iprecieve_inst/data_o_12" BEL
+        "u1/iprecieve_inst/data_o_11" BEL "u1/iprecieve_inst/data_o_10" BEL
+        "u1/iprecieve_inst/data_o_9" BEL "u1/iprecieve_inst/data_o_8" BEL
+        "u1/iprecieve_inst/data_o_7" BEL "u1/iprecieve_inst/data_o_6" BEL
+        "u1/iprecieve_inst/data_o_5" BEL "u1/iprecieve_inst/data_o_4" BEL
+        "u1/iprecieve_inst/data_o_3" BEL "u1/iprecieve_inst/data_o_2" BEL
+        "u1/iprecieve_inst/data_o_1" BEL "u1/iprecieve_inst/data_o_0" BEL
+        "u1/iprecieve_inst/mydata_23" BEL "u1/iprecieve_inst/mydata_22" BEL
+        "u1/iprecieve_inst/mydata_21" BEL "u1/iprecieve_inst/mydata_20" BEL
+        "u1/iprecieve_inst/mydata_19" BEL "u1/iprecieve_inst/mydata_18" BEL
+        "u1/iprecieve_inst/mydata_17" BEL "u1/iprecieve_inst/mydata_16" BEL
+        "u1/iprecieve_inst/mydata_15" BEL "u1/iprecieve_inst/mydata_14" BEL
+        "u1/iprecieve_inst/mydata_13" BEL "u1/iprecieve_inst/mydata_12" BEL
+        "u1/iprecieve_inst/mydata_11" BEL "u1/iprecieve_inst/mydata_10" BEL
+        "u1/iprecieve_inst/mydata_9" BEL "u1/iprecieve_inst/mydata_8" BEL
+        "u1/iprecieve_inst/mydata_7" BEL "u1/iprecieve_inst/mydata_6" BEL
+        "u1/iprecieve_inst/mydata_5" BEL "u1/iprecieve_inst/mydata_4" BEL
+        "u1/iprecieve_inst/mydata_3" BEL "u1/iprecieve_inst/mydata_2" BEL
+        "u1/iprecieve_inst/mydata_1" BEL "u1/iprecieve_inst/mydata_0" BEL
+        "u1/iprecieve_inst/byte_counter_1" BEL
+        "u1/iprecieve_inst/byte_counter_0" BEL
+        "u1/iprecieve_inst/state_counter_4" BEL
+        "u1/iprecieve_inst/state_counter_3" BEL
+        "u1/iprecieve_inst/state_counter_2" BEL
+        "u1/iprecieve_inst/state_counter_1" BEL
+        "u1/iprecieve_inst/state_counter_0" BEL
+        "u1/iprecieve_inst/data_counter_15" BEL
+        "u1/iprecieve_inst/data_counter_14" BEL
+        "u1/iprecieve_inst/data_counter_13" BEL
+        "u1/iprecieve_inst/data_counter_12" BEL
+        "u1/iprecieve_inst/data_counter_11" BEL
+        "u1/iprecieve_inst/data_counter_10" BEL
+        "u1/iprecieve_inst/data_counter_9" BEL
+        "u1/iprecieve_inst/data_counter_8" BEL
+        "u1/iprecieve_inst/data_counter_7" BEL
+        "u1/iprecieve_inst/data_counter_6" BEL
+        "u1/iprecieve_inst/data_counter_5" BEL
+        "u1/iprecieve_inst/data_counter_4" BEL
+        "u1/iprecieve_inst/data_counter_3" BEL
+        "u1/iprecieve_inst/data_counter_2" BEL
+        "u1/iprecieve_inst/rx_total_length_15" BEL
+        "u1/iprecieve_inst/rx_total_length_14" BEL
+        "u1/iprecieve_inst/rx_total_length_13" BEL
+        "u1/iprecieve_inst/rx_total_length_12" BEL
+        "u1/iprecieve_inst/rx_total_length_11" BEL
+        "u1/iprecieve_inst/rx_total_length_10" BEL
+        "u1/iprecieve_inst/rx_total_length_9" BEL
+        "u1/iprecieve_inst/rx_total_length_8" BEL
+        "u1/iprecieve_inst/rx_total_length_7" BEL
+        "u1/iprecieve_inst/rx_total_length_6" BEL
+        "u1/iprecieve_inst/rx_total_length_5" BEL
+        "u1/iprecieve_inst/rx_total_length_4" BEL
+        "u1/iprecieve_inst/rx_total_length_3" BEL
+        "u1/iprecieve_inst/rx_total_length_2" BEL
+        "u1/iprecieve_inst/rx_total_length_1" BEL
+        "u1/iprecieve_inst/rx_total_length_0" BEL
+        "u1/iprecieve_inst/IP_layer_143" BEL "u1/iprecieve_inst/IP_layer_142"
+        BEL "u1/iprecieve_inst/IP_layer_141" BEL
+        "u1/iprecieve_inst/IP_layer_140" BEL "u1/iprecieve_inst/IP_layer_139"
+        BEL "u1/iprecieve_inst/IP_layer_138" BEL
+        "u1/iprecieve_inst/IP_layer_137" BEL "u1/iprecieve_inst/IP_layer_136"
+        BEL "u1/iprecieve_inst/IP_layer_135" BEL
+        "u1/iprecieve_inst/IP_layer_134" BEL "u1/iprecieve_inst/IP_layer_133"
+        BEL "u1/iprecieve_inst/IP_layer_132" BEL
+        "u1/iprecieve_inst/IP_layer_131" BEL "u1/iprecieve_inst/IP_layer_130"
+        BEL "u1/iprecieve_inst/IP_layer_129" BEL
+        "u1/iprecieve_inst/IP_layer_128" BEL "u1/iprecieve_inst/UDP_layer_31"
+        BEL "u1/iprecieve_inst/UDP_layer_30" BEL
+        "u1/iprecieve_inst/UDP_layer_29" BEL "u1/iprecieve_inst/UDP_layer_28"
+        BEL "u1/iprecieve_inst/UDP_layer_27" BEL
+        "u1/iprecieve_inst/UDP_layer_26" BEL "u1/iprecieve_inst/UDP_layer_25"
+        BEL "u1/iprecieve_inst/UDP_layer_24" BEL
+        "u1/iprecieve_inst/UDP_layer_23" BEL "u1/iprecieve_inst/UDP_layer_22"
+        BEL "u1/iprecieve_inst/UDP_layer_21" BEL
+        "u1/iprecieve_inst/UDP_layer_20" BEL "u1/iprecieve_inst/UDP_layer_19"
+        BEL "u1/iprecieve_inst/UDP_layer_18" BEL
+        "u1/iprecieve_inst/UDP_layer_17" BEL "u1/iprecieve_inst/UDP_layer_16"
+        BEL "u1/iprecieve_inst/data_o_valid" BEL "u1/iprecieve_inst/mymac_87"
+        BEL "u1/iprecieve_inst/mymac_86" BEL "u1/iprecieve_inst/mymac_85" BEL
+        "u1/iprecieve_inst/mymac_84" BEL "u1/iprecieve_inst/mymac_83" BEL
+        "u1/iprecieve_inst/mymac_82" BEL "u1/iprecieve_inst/mymac_81" BEL
+        "u1/iprecieve_inst/mymac_80" BEL "u1/iprecieve_inst/mymac_79" BEL
+        "u1/iprecieve_inst/mymac_78" BEL "u1/iprecieve_inst/mymac_77" BEL
+        "u1/iprecieve_inst/mymac_76" BEL "u1/iprecieve_inst/mymac_75" BEL
+        "u1/iprecieve_inst/mymac_74" BEL "u1/iprecieve_inst/mymac_73" BEL
+        "u1/iprecieve_inst/mymac_72" BEL "u1/iprecieve_inst/mymac_71" BEL
+        "u1/iprecieve_inst/mymac_70" BEL "u1/iprecieve_inst/mymac_69" BEL
+        "u1/iprecieve_inst/mymac_68" BEL "u1/iprecieve_inst/mymac_67" BEL
+        "u1/iprecieve_inst/mymac_66" BEL "u1/iprecieve_inst/mymac_65" BEL
+        "u1/iprecieve_inst/mymac_64" BEL "u1/iprecieve_inst/mymac_63" BEL
+        "u1/iprecieve_inst/mymac_62" BEL "u1/iprecieve_inst/mymac_61" BEL
+        "u1/iprecieve_inst/mymac_60" BEL "u1/iprecieve_inst/mymac_59" BEL
+        "u1/iprecieve_inst/mymac_58" BEL "u1/iprecieve_inst/mymac_57" BEL
+        "u1/iprecieve_inst/mymac_56" BEL "u1/iprecieve_inst/mymac_55" BEL
+        "u1/iprecieve_inst/mymac_54" BEL "u1/iprecieve_inst/mymac_53" BEL
+        "u1/iprecieve_inst/mymac_52" BEL "u1/iprecieve_inst/mymac_51" BEL
+        "u1/iprecieve_inst/mymac_50" BEL "u1/iprecieve_inst/mymac_49" BEL
+        "u1/iprecieve_inst/mymac_48" BEL "u1/iprecieve_inst/myIP_layer_135"
+        BEL "u1/iprecieve_inst/myIP_layer_134" BEL
+        "u1/iprecieve_inst/myIP_layer_133" BEL
+        "u1/iprecieve_inst/myIP_layer_132" BEL
+        "u1/iprecieve_inst/myIP_layer_131" BEL
+        "u1/iprecieve_inst/myIP_layer_130" BEL
+        "u1/iprecieve_inst/myIP_layer_129" BEL
+        "u1/iprecieve_inst/myIP_layer_128" BEL
+        "u1/iprecieve_inst/myUDP_layer_23" BEL
+        "u1/iprecieve_inst/myUDP_layer_22" BEL
+        "u1/iprecieve_inst/myUDP_layer_21" BEL
+        "u1/iprecieve_inst/myUDP_layer_20" BEL
+        "u1/iprecieve_inst/myUDP_layer_19" BEL
+        "u1/iprecieve_inst/myUDP_layer_18" BEL
+        "u1/iprecieve_inst/myUDP_layer_17" BEL
+        "u1/iprecieve_inst/myUDP_layer_16" BEL
+        "u1/ipsend_inst/send_counter_31" BEL "u1/ipsend_inst/send_counter_30"
+        BEL "u1/ipsend_inst/send_counter_29" BEL
+        "u1/ipsend_inst/send_counter_28" BEL "u1/ipsend_inst/send_counter_27"
+        BEL "u1/ipsend_inst/send_counter_26" BEL
+        "u1/ipsend_inst/send_counter_25" BEL "u1/ipsend_inst/send_counter_24"
+        BEL "u1/ipsend_inst/send_counter_23" BEL
+        "u1/ipsend_inst/send_counter_22" BEL "u1/ipsend_inst/send_counter_21"
+        BEL "u1/ipsend_inst/send_counter_20" BEL
+        "u1/ipsend_inst/send_counter_19" BEL "u1/ipsend_inst/send_counter_18"
+        BEL "u1/ipsend_inst/send_counter_17" BEL
+        "u1/ipsend_inst/send_counter_16" BEL "u1/ipsend_inst/send_counter_15"
+        BEL "u1/ipsend_inst/send_counter_14" BEL
+        "u1/ipsend_inst/send_counter_13" BEL "u1/ipsend_inst/send_counter_12"
+        BEL "u1/ipsend_inst/send_counter_11" BEL
+        "u1/ipsend_inst/send_counter_10" BEL "u1/ipsend_inst/send_counter_9"
+        BEL "u1/ipsend_inst/send_counter_8" BEL
+        "u1/ipsend_inst/send_counter_7" BEL "u1/ipsend_inst/send_counter_6"
+        BEL "u1/ipsend_inst/send_counter_5" BEL
+        "u1/ipsend_inst/send_counter_4" BEL "u1/ipsend_inst/send_counter_3"
+        BEL "u1/ipsend_inst/send_counter_2" BEL
+        "u1/ipsend_inst/send_counter_1" BEL "u1/ipsend_inst/send_counter_0"
+        BEL "u1/ipsend_inst/ram_rd_addr_8" BEL "u1/ipsend_inst/ram_rd_addr_7"
+        BEL "u1/ipsend_inst/ram_rd_addr_6" BEL "u1/ipsend_inst/ram_rd_addr_5"
+        BEL "u1/ipsend_inst/ram_rd_addr_4" BEL "u1/ipsend_inst/ram_rd_addr_3"
+        BEL "u1/ipsend_inst/ram_rd_addr_2" BEL "u1/ipsend_inst/ram_rd_addr_1"
+        BEL "u1/ipsend_inst/ram_rd_addr_0" BEL
+        "u1/ipsend_inst/time_counter_31" BEL "u1/ipsend_inst/time_counter_30"
+        BEL "u1/ipsend_inst/time_counter_29" BEL
+        "u1/ipsend_inst/time_counter_28" BEL "u1/ipsend_inst/time_counter_27"
+        BEL "u1/ipsend_inst/time_counter_26" BEL
+        "u1/ipsend_inst/time_counter_25" BEL "u1/ipsend_inst/time_counter_24"
+        BEL "u1/ipsend_inst/time_counter_23" BEL
+        "u1/ipsend_inst/time_counter_22" BEL "u1/ipsend_inst/time_counter_21"
+        BEL "u1/ipsend_inst/time_counter_20" BEL
+        "u1/ipsend_inst/time_counter_19" BEL "u1/ipsend_inst/time_counter_18"
+        BEL "u1/ipsend_inst/time_counter_17" BEL
+        "u1/ipsend_inst/time_counter_16" BEL "u1/ipsend_inst/time_counter_15"
+        BEL "u1/ipsend_inst/time_counter_14" BEL
+        "u1/ipsend_inst/time_counter_13" BEL "u1/ipsend_inst/time_counter_12"
+        BEL "u1/ipsend_inst/time_counter_11" BEL
+        "u1/ipsend_inst/time_counter_10" BEL "u1/ipsend_inst/time_counter_9"
+        BEL "u1/ipsend_inst/time_counter_8" BEL
+        "u1/ipsend_inst/time_counter_7" BEL "u1/ipsend_inst/time_counter_6"
+        BEL "u1/ipsend_inst/time_counter_5" BEL
+        "u1/ipsend_inst/time_counter_4" BEL "u1/ipsend_inst/time_counter_3"
+        BEL "u1/ipsend_inst/time_counter_2" BEL
+        "u1/ipsend_inst/time_counter_1" BEL "u1/ipsend_inst/time_counter_0"
+        BEL "u1/ipsend_inst/tx_state_FSM_FFd2" BEL
+        "u1/ipsend_inst/tx_state_FSM_FFd3" BEL
+        "u1/ipsend_inst/tx_state_FSM_FFd1" BEL
+        "u1/ipsend_inst/tx_data_counter_15" BEL
+        "u1/ipsend_inst/tx_data_counter_14" BEL
+        "u1/ipsend_inst/tx_data_counter_13" BEL
+        "u1/ipsend_inst/tx_data_counter_12" BEL
+        "u1/ipsend_inst/tx_data_counter_11" BEL
+        "u1/ipsend_inst/tx_data_counter_10" BEL
+        "u1/ipsend_inst/tx_data_counter_9" BEL
+        "u1/ipsend_inst/tx_data_counter_8" BEL
+        "u1/ipsend_inst/tx_data_counter_7" BEL
+        "u1/ipsend_inst/tx_data_counter_6" BEL
+        "u1/ipsend_inst/tx_data_counter_5" BEL
+        "u1/ipsend_inst/tx_data_counter_4" BEL
+        "u1/ipsend_inst/tx_data_counter_3" BEL
+        "u1/ipsend_inst/tx_data_counter_2" BEL
+        "u1/ipsend_inst/tx_data_counter_1" BEL
+        "u1/ipsend_inst/tx_data_counter_0" BEL "u1/ipsend_inst/dataout_7" BEL
+        "u1/ipsend_inst/dataout_6" BEL "u1/ipsend_inst/dataout_5" BEL
+        "u1/ipsend_inst/dataout_4" BEL "u1/ipsend_inst/dataout_3" BEL
+        "u1/ipsend_inst/dataout_2" BEL "u1/ipsend_inst/dataout_1" BEL
+        "u1/ipsend_inst/dataout_0" BEL "u1/ipsend_inst/check_buffer_18" BEL
+        "u1/ipsend_inst/check_buffer_17" BEL "u1/ipsend_inst/check_buffer_16"
+        BEL "u1/ipsend_inst/j_4" BEL "u1/ipsend_inst/j_3" BEL
+        "u1/ipsend_inst/j_2" BEL "u1/ipsend_inst/j_1" BEL "u1/ipsend_inst/j_0"
+        BEL "u1/ipsend_inst/i_4" BEL "u1/ipsend_inst/i_3" BEL
+        "u1/ipsend_inst/i_2" BEL "u1/ipsend_inst/i_1" BEL "u1/ipsend_inst/i_0"
+        BEL "u1/ipsend_inst/check_buffer_15" BEL
+        "u1/ipsend_inst/check_buffer_14" BEL "u1/ipsend_inst/check_buffer_13"
+        BEL "u1/ipsend_inst/check_buffer_12" BEL
+        "u1/ipsend_inst/check_buffer_11" BEL "u1/ipsend_inst/check_buffer_10"
+        BEL "u1/ipsend_inst/check_buffer_9" BEL
+        "u1/ipsend_inst/check_buffer_8" BEL "u1/ipsend_inst/check_buffer_7"
+        BEL "u1/ipsend_inst/check_buffer_6" BEL
+        "u1/ipsend_inst/check_buffer_5" BEL "u1/ipsend_inst/check_buffer_4"
+        BEL "u1/ipsend_inst/check_buffer_3" BEL
+        "u1/ipsend_inst/check_buffer_2" BEL "u1/ipsend_inst/check_buffer_1"
+        BEL "u1/ipsend_inst/check_buffer_0" BEL
+        "u1/ipsend_inst/ip_header_0_223" BEL "u1/ipsend_inst/ip_header_0_222"
+        BEL "u1/ipsend_inst/ip_header_0_221" BEL
+        "u1/ipsend_inst/ip_header_0_220" BEL "u1/ipsend_inst/ip_header_0_219"
+        BEL "u1/ipsend_inst/ip_header_0_218" BEL
+        "u1/ipsend_inst/ip_header_0_217" BEL "u1/ipsend_inst/ip_header_0_216"
+        BEL "u1/ipsend_inst/ip_header_0_215" BEL
+        "u1/ipsend_inst/ip_header_0_214" BEL "u1/ipsend_inst/ip_header_0_213"
+        BEL "u1/ipsend_inst/ip_header_0_212" BEL
+        "u1/ipsend_inst/ip_header_0_211" BEL "u1/ipsend_inst/ip_header_0_210"
+        BEL "u1/ipsend_inst/ip_header_0_209" BEL
+        "u1/ipsend_inst/ip_header_0_208" BEL "u1/ipsend_inst/ip_header_0_79"
+        BEL "u1/ipsend_inst/ip_header_0_78" BEL
+        "u1/ipsend_inst/ip_header_0_77" BEL "u1/ipsend_inst/ip_header_0_76"
+        BEL "u1/ipsend_inst/ip_header_0_75" BEL
+        "u1/ipsend_inst/ip_header_0_74" BEL "u1/ipsend_inst/ip_header_0_73"
+        BEL "u1/ipsend_inst/ip_header_0_72" BEL
+        "u1/ipsend_inst/ip_header_0_71" BEL "u1/ipsend_inst/ip_header_0_70"
+        BEL "u1/ipsend_inst/ip_header_0_69" BEL
+        "u1/ipsend_inst/ip_header_0_68" BEL "u1/ipsend_inst/ip_header_0_67"
+        BEL "u1/ipsend_inst/ip_header_0_66" BEL
+        "u1/ipsend_inst/ip_header_0_65" BEL "u1/ipsend_inst/ip_header_0_64"
+        BEL "u1/ipsend_inst/ip_header_0_63" BEL
+        "u1/ipsend_inst/ip_header_0_62" BEL "u1/ipsend_inst/ip_header_0_61"
+        BEL "u1/ipsend_inst/ip_header_0_60" BEL
+        "u1/ipsend_inst/ip_header_0_59" BEL "u1/ipsend_inst/ip_header_0_58"
+        BEL "u1/ipsend_inst/ip_header_0_57" BEL
+        "u1/ipsend_inst/ip_header_0_56" BEL "u1/ipsend_inst/ip_header_0_55"
+        BEL "u1/ipsend_inst/ip_header_0_54" BEL
+        "u1/ipsend_inst/ip_header_0_53" BEL "u1/ipsend_inst/ip_header_0_52"
+        BEL "u1/ipsend_inst/ip_header_0_51" BEL
+        "u1/ipsend_inst/ip_header_0_50" BEL "u1/ipsend_inst/ip_header_0_49"
+        BEL "u1/ipsend_inst/ip_header_0_48" BEL
+        "u1/ipsend_inst/ip_header_0_15" BEL "u1/ipsend_inst/ip_header_0_14"
+        BEL "u1/ipsend_inst/ip_header_0_13" BEL
+        "u1/ipsend_inst/ip_header_0_12" BEL "u1/ipsend_inst/ip_header_0_11"
+        BEL "u1/ipsend_inst/ip_header_0_10" BEL "u1/ipsend_inst/ip_header_0_9"
+        BEL "u1/ipsend_inst/ip_header_0_8" BEL "u1/ipsend_inst/ip_header_0_7"
+        BEL "u1/ipsend_inst/ip_header_0_6" BEL "u1/ipsend_inst/ip_header_0_5"
+        BEL "u1/ipsend_inst/ip_header_0_4" BEL "u1/ipsend_inst/ip_header_0_3"
+        BEL "u1/ipsend_inst/ip_header_0_2" BEL "u1/ipsend_inst/ip_header_0_1"
+        BEL "u1/ipsend_inst/ip_header_0_0" BEL "u1/ipsend_inst/txer" BEL
+        "u1/ipsend_inst/crcre" BEL "u1/ipsend_inst/txen" BEL
+        "u1/ipsend_inst/datain_reg_31" BEL "u1/ipsend_inst/datain_reg_30" BEL
+        "u1/ipsend_inst/datain_reg_29" BEL "u1/ipsend_inst/datain_reg_28" BEL
+        "u1/ipsend_inst/datain_reg_27" BEL "u1/ipsend_inst/datain_reg_26" BEL
+        "u1/ipsend_inst/datain_reg_25" BEL "u1/ipsend_inst/datain_reg_24" BEL
+        "u1/ipsend_inst/datain_reg_23" BEL "u1/ipsend_inst/datain_reg_22" BEL
+        "u1/ipsend_inst/datain_reg_21" BEL "u1/ipsend_inst/datain_reg_20" BEL
+        "u1/ipsend_inst/datain_reg_19" BEL "u1/ipsend_inst/datain_reg_18" BEL
+        "u1/ipsend_inst/datain_reg_17" BEL "u1/ipsend_inst/datain_reg_16" BEL
+        "u1/ipsend_inst/datain_reg_15" BEL "u1/ipsend_inst/datain_reg_14" BEL
+        "u1/ipsend_inst/datain_reg_13" BEL "u1/ipsend_inst/datain_reg_12" BEL
+        "u1/ipsend_inst/datain_reg_11" BEL "u1/ipsend_inst/datain_reg_10" BEL
+        "u1/ipsend_inst/datain_reg_9" BEL "u1/ipsend_inst/datain_reg_8" BEL
+        "u1/ipsend_inst/datain_reg_7" BEL "u1/ipsend_inst/datain_reg_6" BEL
+        "u1/ipsend_inst/datain_reg_5" BEL "u1/ipsend_inst/datain_reg_4" BEL
+        "u1/ipsend_inst/datain_reg_3" BEL "u1/ipsend_inst/datain_reg_2" BEL
+        "u1/ipsend_inst/datain_reg_1" BEL "u1/ipsend_inst/datain_reg_0" BEL
+        "u1/ipsend_inst/crcen" BEL "u1/crc_inst/Crc_31" BEL
+        "u1/crc_inst/Crc_30" BEL "u1/crc_inst/Crc_29" BEL "u1/crc_inst/Crc_28"
+        BEL "u1/crc_inst/Crc_27" BEL "u1/crc_inst/Crc_26" BEL
+        "u1/crc_inst/Crc_25" BEL "u1/crc_inst/Crc_24" BEL "u1/crc_inst/Crc_23"
+        BEL "u1/crc_inst/Crc_22" BEL "u1/crc_inst/Crc_21" BEL
+        "u1/crc_inst/Crc_20" BEL "u1/crc_inst/Crc_19" BEL "u1/crc_inst/Crc_18"
+        BEL "u1/crc_inst/Crc_17" BEL "u1/crc_inst/Crc_16" BEL
+        "u1/crc_inst/Crc_15" BEL "u1/crc_inst/Crc_14" BEL "u1/crc_inst/Crc_13"
+        BEL "u1/crc_inst/Crc_12" BEL "u1/crc_inst/Crc_11" BEL
+        "u1/crc_inst/Crc_10" BEL "u1/crc_inst/Crc_9" BEL "u1/crc_inst/Crc_8"
+        BEL "u1/crc_inst/Crc_7" BEL "u1/crc_inst/Crc_6" BEL
+        "u1/crc_inst/Crc_5" BEL "u1/crc_inst/Crc_4" BEL "u1/crc_inst/Crc_3"
+        BEL "u1/crc_inst/Crc_2" BEL "u1/crc_inst/Crc_1" BEL
+        "u1/crc_inst/Crc_0" BEL "ram_wr_finish_out" BEL
+        "u1/iprecieve_inst/data_receive" BEL
+        "u1/ipsend_inst/send_counter_22_1" BEL
+        "u1/ipsend_inst/send_counter_22_2" BEL
+        "u1/ipsend_inst/send_counter_23_1" BEL
+        "u1/ipsend_inst/send_counter_24_1" BEL
+        "u1/ipsend_inst/send_counter_25_1" BEL
+        "u1/ipsend_inst/send_counter_23_2" BEL
+        "u1/ipsend_inst/send_counter_24_2" BEL
+        "u1/ipsend_inst/send_counter_25_2" BEL
+        "u1/ipsend_inst/send_counter_23_3" BEL
+        "u1/ipsend_inst/send_counter_24_3" BEL
+        "u1/ipsend_inst/send_counter_25_3" BEL
+        "u1/ipsend_inst/send_counter_24_4" BEL
+        "u1/ipsend_inst/send_counter_25_4" BEL
+        "u1/ipsend_inst/send_counter_24_5" BEL
+        "u1/ipsend_inst/send_counter_24_6" BEL "e_gtxc_OBUF_BUFG" BEL
+        "u1/iprecieve_inst/Mshreg_mymac_45" BEL "u1/iprecieve_inst/mymac_45"
+        BEL "u1/iprecieve_inst/Mshreg_mymac_47" BEL
+        "u1/iprecieve_inst/mymac_47" BEL "u1/iprecieve_inst/Mshreg_mymac_46"
+        BEL "u1/iprecieve_inst/mymac_46" BEL
+        "u1/iprecieve_inst/Mshreg_mymac_42" BEL "u1/iprecieve_inst/mymac_42"
+        BEL "u1/iprecieve_inst/Mshreg_mymac_44" BEL
+        "u1/iprecieve_inst/mymac_44" BEL "u1/iprecieve_inst/Mshreg_mymac_43"
+        BEL "u1/iprecieve_inst/mymac_43" BEL
+        "u1/iprecieve_inst/Mshreg_myIP_layer_127" BEL
+        "u1/iprecieve_inst/myIP_layer_127" BEL
+        "u1/iprecieve_inst/Mshreg_mymac_41" BEL "u1/iprecieve_inst/mymac_41"
+        BEL "u1/iprecieve_inst/Mshreg_mymac_40" BEL
+        "u1/iprecieve_inst/mymac_40" BEL
+        "u1/iprecieve_inst/Mshreg_myIP_layer_124" BEL
+        "u1/iprecieve_inst/myIP_layer_124" BEL
+        "u1/iprecieve_inst/Mshreg_myIP_layer_126" BEL
+        "u1/iprecieve_inst/myIP_layer_126" BEL
+        "u1/iprecieve_inst/Mshreg_myIP_layer_125" BEL
+        "u1/iprecieve_inst/myIP_layer_125" BEL
+        "u1/iprecieve_inst/Mshreg_myIP_layer_121" BEL
+        "u1/iprecieve_inst/myIP_layer_121" BEL
+        "u1/iprecieve_inst/Mshreg_myIP_layer_123" BEL
+        "u1/iprecieve_inst/myIP_layer_123" BEL
+        "u1/iprecieve_inst/Mshreg_myIP_layer_122" BEL
+        "u1/iprecieve_inst/myIP_layer_122" BEL
+        "u1/iprecieve_inst/Mshreg_myUDP_layer_14" BEL
+        "u1/iprecieve_inst/myUDP_layer_14" BEL
+        "u1/iprecieve_inst/Mshreg_myIP_layer_120" BEL
+        "u1/iprecieve_inst/myIP_layer_120" BEL
+        "u1/iprecieve_inst/Mshreg_myUDP_layer_15" BEL
+        "u1/iprecieve_inst/myUDP_layer_15" BEL
+        "u1/iprecieve_inst/Mshreg_myUDP_layer_11" BEL
+        "u1/iprecieve_inst/myUDP_layer_11" BEL
+        "u1/iprecieve_inst/Mshreg_myUDP_layer_13" BEL
+        "u1/iprecieve_inst/myUDP_layer_13" BEL
+        "u1/iprecieve_inst/Mshreg_myUDP_layer_12" BEL
+        "u1/iprecieve_inst/myUDP_layer_12" BEL
+        "u1/iprecieve_inst/Mshreg_myUDP_layer_8" BEL
+        "u1/iprecieve_inst/myUDP_layer_8" BEL
+        "u1/iprecieve_inst/Mshreg_myUDP_layer_10" BEL
+        "u1/iprecieve_inst/myUDP_layer_10" BEL
+        "u1/iprecieve_inst/Mshreg_myUDP_layer_9" BEL
+        "u1/iprecieve_inst/myUDP_layer_9" PIN
+        "ram_inst_out/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram_pins<28>"
+        PIN
+        "ram_inst_out/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram_pins<29>"
+        PIN
+        "ram_inst/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram_pins<28>"
+        PIN
+        "ram_inst/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram_pins<29>"
+        BEL "e_gtxc";
+TIMEGRP gtxc_clk_pin = BEL "e_gtxc";
+TS_grxc_clk_pin = PERIOD TIMEGRP "grxc_clk_pin" 8 ns HIGH 50%;
+TS_gtxc_clk_pin = PERIOD TIMEGRP "gtxc_clk_pin" 8 ns HIGH 50%;
+SCHEMATIC END;
+
